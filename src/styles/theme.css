@@ -1,0 +1,35 @@
+:root {
+  --color-primary: #0a1a2f;
+  --color-accent: #e63946;
+  --color-bg: #08121f;
+  --color-surface: rgba(255, 255, 255, 0.06);
+  --color-surface-2: rgba(255, 255, 255, 0.09);
+  --color-border: rgba(255, 255, 255, 0.12);
+  --color-text: rgba(255, 255, 255, 0.92);
+  --color-muted: rgba(255, 255, 255, 0.7);
+
+  --radius: 14px;
+  --shadow: 0 12px 26px rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, 'Apple Color Emoji', 'Segoe UI Emoji';
+  background: radial-gradient(1200px 600px at 20% 0%, rgba(230, 57, 70, 0.16), transparent 60%),
+    radial-gradient(1200px 600px at 80% 20%, rgba(69, 123, 157, 0.18), transparent 60%),
+    var(--color-bg);
+  color: var(--color-text);
+}
+
+a {
+  color: var(--color-text);
+}

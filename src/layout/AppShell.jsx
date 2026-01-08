@@ -14,7 +14,10 @@ export function AppShell() {
       <Header
         left={
           <div className="headerLeft">
-            <div className="brand">Team Time Tracker</div>
+            <div className="brand">
+              <img className="brandLogo" src="/logo.png" alt="Team Matrix" />
+              <span>Team Time Tracker</span>
+            </div>
             <nav className="nav">
               <NavLink className={({ isActive }) => (isActive ? 'navLink active' : 'navLink')} to="/timer">
                 Timer

@@ -143,7 +143,10 @@ export default function DashboardPage() {
   }, [leaderboardAll, filter]);
 
   const leaderToday = useMemo(() => {
-    return leaderboardAll[0] || null;
+    const first = leaderboardAll[0] || null;
+    if (!first) return null;
+    if ((first.today_minutes || 0) <= 0) return null;
+    return first;
   }, [leaderboardAll]);
 
   const comparisonWeekData = useMemo(() => {
